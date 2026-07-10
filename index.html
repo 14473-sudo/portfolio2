@@ -1,1 +1,291 @@
+header{
+    background:#0d6efd;
+    color:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
 
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ffd43b;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 10%;
+}
+
+h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+#home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+#home img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid #0d6efd;
+    margin-bottom:20px;
+}
+
+#home h1{
+    font-size:42px;
+}
+
+#home p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.project{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project-box:hover{
+    transform:translateY(-8px);
+}
+
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    background:#0d6efd;
+    color:white;
+    padding:8px;
+    text-align:right;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#084298;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">My Portfolio</div>
+
+<ul>
+<li><a href="#home">หน้าแรก</a></li>
+<li><a href="#about">ประวัติ</a></li>
+<li><a href="#portfolio">ผลงาน</a></li>
+<li><a href="#skills">ทักษะ</a></li>
+<li><a href="#contact">ติดต่อ</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- หน้าแรก -->
+
+<section id="home">
+
+<img src="https://via.placeholder.com/180" alt="profile">
+
+<h1>ชื่อ - นามสกุล</h1>
+
+<p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+
+<button onclick="welcome()">ยินดีต้อนรับ</button>
+
+</section>
+
+<!-- ประวัติ -->
+
+<section id="about">
+
+<h2>ประวัติส่วนตัว</h2>
+
+<div class="card">
+
+<p><strong>ชื่อ :</strong> ชื่อ - นามสกุล</p>
+<p><strong>ชื่อเล่น :</strong> ............</p>
+<p><strong>อายุ :</strong> 18 ปี</p>
+<p><strong>โรงเรียน :</strong> ...............</p>
+<p><strong>แผนการเรียน :</strong> วิทยาศาสตร์-คณิตศาสตร์</p>
+<p><strong>ความสนใจ :</strong> การเขียนโปรแกรม การออกแบบเว็บไซต์ และเทคโนโลยี</p>
+
+</div>
+
+</section>
+
+<!-- ผลงาน -->
+
+<section id="portfolio">
+
+<h2>ผลงาน</h2>
+
+<div class="project">
+
+<div class="project-box">
+<h3>เว็บไซต์ Portfolio</h3>
+<p>พัฒนาเว็บไซต์ Portfolio ด้วย HTML CSS JavaScript</p>
+</div>
+
+<div class="project-box">
+<h3>โปรแกรมคำนวณ</h3>
+<p>สร้างโปรแกรมคำนวณด้วยภาษา Python</p>
+</div>
+
+<div class="project-box">
+<h3>โครงงานโรงเรียน</h3>
+<p>พัฒนาเว็บไซต์สำหรับนำเสนอโครงงาน</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ทักษะ -->
+
+<section id="skills">
+
+<h2>ทักษะ</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar">
+<div class="progress" style="width:90%">90%</div>
+</div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar">
+<div class="progress" style="width:85%">85%</div>
+</div>
+</div>
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar">
+<div class="progress" style="width:70%">70%</div>
+</div>
+</div>
+
+<div class="skill">
+<p>Python</p>
+<div class="bar">
+<div class="progress" style="width:75%">75%</div>
+</div>
+</div>
+
+</section>
+
+<!-- ติดต่อ -->
+
+<section id="contact">
+
+<h2>ช่องทางติดต่อ</h2>
+
+<div class="card">
+
+<p>📧 Email : yourname@email.com</p>
+
+<p>📱 โทร : 08x-xxx-xxxx</p>
+
+<p>📘 Facebook : Your Name</p>
+
+<p>📷 Instagram : @yourname</p>
+
+<p>💻 GitHub : github.com/yourname</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Portfolio | จัดทำโดย ชื่อ-นามสกุล</p>
+
+</footer>
+
+<script>
+function welcome(){
+    alert("ยินดีต้อนรับสู่ Portfolio ของผม");
+}
+</script>
+
+</body>
+</html>
