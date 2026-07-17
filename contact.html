@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ช่องทางติดต่อ</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:linear-gradient(135deg,#dbeafe,#f8fbff);
+}
+
+/* Header */
+header{
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:38px;
+}
+
+/* เมนู */
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#1e40af;
+    transform:translateY(-3px);
+}
+
+/* กล่องหลัก */
+.container{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+}
+
+/* Card */
+.card{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    padding:35px;
+    margin-bottom:40px;
+}
+
+.card h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.card p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+/* ตารางข้อมูล */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:16px;
+    border-bottom:1px solid #ddd;
+    font-size:18px;
+}
+
+td:first-child{
+    width:35%;
+    font-weight:bold;
+    color:#2563eb;
+    background:#f1f5ff;
+}
+
+tr:hover{
+    background:#f8fbff;
+}
+
+/* ปุ่ม */
+.button{
+    display:block;
+    width:220px;
+    margin:35px auto 0;
+    text-align:center;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#1e40af;
+    transform:translateY(-3px);
+}
+
+/* Footer */
+footer{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>📞 ช่องทางติดต่อ</h1>
+</header>
+
+<nav>
+<a href="index.html">🏠 หน้าแรก</a>
+<a href="profile.html">👤 ข้อมูลส่วนตัว</a>
+<a href="education.html">🎓 ประวัติการศึกษา</a>
+<a href="achievements.html">🏆 ผลงาน</a>
+<a href="contact.html">📞 ติดต่อ</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Contact Information</h2>
+<p>สามารถติดต่อได้ตามช่องทางด้านล่าง</p>
+
+<table>
+
+<tr>
+<td>👤 ชื่อ</td>
+<td>....................................</td>
+</tr>
+
+<tr>
+<td>📱 โทรศัพท์</td>
+<td>08x-xxx-xxxx</td>
+</tr>
+
+<tr>
+<td>📧 Email</td>
+<td>example@gmail.com</td>
+</tr>
+
+<tr>
+<td>📘 Facebook</td>
+<td>Your Name</td>
+</tr>
+
+<tr>
+<td>📷 Instagram</td>
+<td>@yourname</td>
+</tr>
+
+<tr>
+<td>📍 ที่อยู่</td>
+<td>จังหวัด....................................</td>
+</tr>
+
+</table>
+
+<a class="button" href="mailto:example@gmail.com">
+📩 ส่งอีเมลถึงฉัน
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Portfolio | Your Name
+</footer>
+
+</body>
+</html>
