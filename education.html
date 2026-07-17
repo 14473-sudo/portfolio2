@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติการศึกษา</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:linear-gradient(135deg,#dbeafe,#f8fbff);
+}
+
+/* Header */
+header{
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:38px;
+}
+
+/* เมนู */
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#1e40af;
+    transform:translateY(-3px);
+}
+
+/* กล่องหลัก */
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+/* Timeline */
+.timeline{
+    position:relative;
+    margin:40px 0;
+    padding-left:30px;
+    border-left:5px solid #2563eb;
+}
+
+.item{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    position:relative;
+}
+
+.item::before{
+    content:"";
+    width:18px;
+    height:18px;
+    background:#2563eb;
+    border-radius:50%;
+    position:absolute;
+    left:-40px;
+    top:28px;
+}
+
+.item h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.item p{
+    line-height:1.8;
+    color:#444;
+}
+
+/* Footer */
+footer{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🎓 ประวัติการศึกษา</h1>
+</header>
+
+<nav>
+<a href="index.html">🏠 หน้าแรก</a>
+<a href="profile.html">👤 ข้อมูลส่วนตัว</a>
+<a href="education.html">🎓 ประวัติการศึกษา</a>
+<a href="achievements.html">🏆 ผลงาน</a>
+<a href="contact.html">📞 ติดต่อ</a>
+</nav>
+
+<div class="container">
+
+<div class="timeline">
+
+<div class="item">
+<h2>🏫 ระดับอนุบาล</h2>
+<p>
+โรงเรียน : ........................................<br>
+ปีการศึกษา : ........................................
+</p>
+</div>
+
+<div class="item">
+<h2>📚 ระดับประถมศึกษา</h2>
+<p>
+โรงเรียน : ........................................<br>
+ปีที่ศึกษา : ........................................
+</p>
+</div>
+
+<div class="item">
+<h2>📖 ระดับมัธยมศึกษาตอนต้น</h2>
+<p>
+โรงเรียน : ........................................<br>
+ปีที่ศึกษา : ........................................
+</p>
+</div>
+
+<div class="item">
+<h2>🎓 ระดับมัธยมศึกษาตอนปลาย</h2>
+<p>
+โรงเรียน : ........................................<br>
+แผนการเรียน : ........................................<br>
+กำลังศึกษาในระดับชั้นมัธยมศึกษาปีที่ 6
+</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Portfolio | Your Name
+</footer>
+
+</body>
+</html>
