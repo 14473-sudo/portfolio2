@@ -2,41 +2,178 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | หน้าแรก</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg,#dbeafe,#f8fbff);
+}
+
+header{
+    background: linear-gradient(90deg,#3b82f6,#2563eb);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:12px 24px;
+    border-radius:40px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#1e40af;
+    transform:translateY(-3px);
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+
+    background:white;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+
+    padding:40px;
+    margin-top:30px;
+}
+
+.card img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #2563eb;
+}
+
+.info{
+    max-width:500px;
+}
+
+.info h2{
+    color:#2563eb;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.info h3{
+    color:#555;
+    margin-bottom:25px;
+}
+
+.info p{
+    font-size:18px;
+    line-height:2;
+}
+
+footer{
+    text-align:center;
+    margin-top:50px;
+    background:#2563eb;
+    color:white;
+    padding:18px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Portfolio</h1>
-<h2>ยินดีต้อนรับ</h2>
+
+<h1>PORTFOLIO</h1>
+
+<p>แฟ้มสะสมผลงานนักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+
 </header>
 
 <nav>
-<a href="index.html">หน้าแรก</a>
-<a href="profile.html">ข้อมูลส่วนตัว</a>
-<a href="education.html">ประวัติการศึกษา</a>
-<a href="achievements.html">ผลงาน</a>
-<a href="contact.html">ช่องทางติดต่อ</a>
+
+<a href="index.html">🏠 หน้าแรก</a>
+
+<a href="profile.html">👤 ข้อมูลส่วนตัว</a>
+
+<a href="education.html">🎓 ประวัติการศึกษา</a>
+
+<a href="achievements.html">🏆 ผลงาน</a>
+
+<a href="contact.html">📞 ติดต่อ</a>
+
 </nav>
 
 <div class="container">
 
-<img src="images/profile.jpg" alt="รูปภาพ">
+<div class="card">
 
-<h2>ชื่อ-นามสกุล</h2>
-<p>นาย.......................</p>
+<img src="images/profile.jpg" alt="Profile">
 
-<p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+<div class="info">
+
+<h2>ชื่อ - นามสกุล</h2>
+
+<h3>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h3>
+
+<p>
+ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของฉัน
+เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว ประวัติการศึกษา
+ผลงาน กิจกรรม และช่องทางการติดต่อ
+เพื่อใช้ประกอบการศึกษาต่อและแสดงความสามารถของตนเอง
+</p>
+
+</div>
+
+</div>
 
 </div>
 
 <footer>
-Portfolio by Your Name
+
+© 2026 Portfolio | Your Name
+
 </footer>
 
 </body>
 </html>
-
-
