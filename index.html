@@ -92,6 +92,23 @@ body{
     left:50%;
     animation-duration:14s;
 }
+    @keyframes fall{
+
+0%{
+    transform:translateY(-100px) translateX(0) rotate(0deg);
+    opacity:1;
+}
+
+50%{
+    transform:translateY(50vh) translateX(40px) rotate(180deg);
+}
+
+100%{
+    transform:translateY(110vh) translateX(-40px) rotate(360deg);
+    opacity:0;
+}
+
+}
 header{
     background: linear-gradient(90deg,#3b82f6,#2563eb);
     color:white;
