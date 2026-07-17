@@ -2,39 +2,188 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ข้อมูลส่วนตัว</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+    background:linear-gradient(135deg,#dbeafe,#f8fbff);
+}
+
+/* Header */
+header{
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:38px;
+}
+
+/* เมนู */
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#1e40af;
+    transform:translateY(-3px);
+}
+
+/* กล่องข้อมูล */
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    padding:40px;
+    margin-bottom:40px;
+}
+
+.card h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+/* ตารางข้อมูล */
+table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:18px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+td:first-child{
+    width:35%;
+    font-weight:bold;
+    color:#2563eb;
+    background:#f1f5ff;
+}
+
+tr:hover{
+    background:#f8fbff;
+}
+
+/* Footer */
+footer{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-<h1>ข้อมูลส่วนตัว</h1>
+<h1>👤 ข้อมูลส่วนตัว</h1>
 </header>
 
 <nav>
-<a href="index.html">หน้าแรก</a>
-<a href="profile.html">ข้อมูลส่วนตัว</a>
-<a href="education.html">ประวัติการศึกษา</a>
-<a href="achievements.html">ผลงาน</a>
-<a href="contact.html">ช่องทางติดต่อ</a>
+<a href="index.html">🏠 หน้าแรก</a>
+<a href="profile.html">👤 ข้อมูลส่วนตัว</a>
+<a href="education.html">🎓 ประวัติการศึกษา</a>
+<a href="achievements.html">🏆 ผลงาน</a>
+<a href="contact.html">📞 ติดต่อ</a>
 </nav>
+
+<div class="container">
 
 <div class="card">
 
-<h2>ข้อมูลส่วนตัว</h2>
+<h2>Personal Information</h2>
 
-<p><b>ชื่อ-นามสกุล :</b> ................................</p>
+<table>
 
-<p><b>ชื่อเล่น :</b> ................................</p>
+<tr>
+<td>👤 ชื่อ - นามสกุล</td>
+<td>....................................</td>
+</tr>
 
-<p><b>วันเดือนปีเกิด :</b> ................................</p>
+<tr>
+<td>😊 ชื่อเล่น</td>
+<td>....................................</td>
+</tr>
 
-<p><b>กรุ๊ปเลือด :</b> ................................</p>
+<tr>
+<td>🎂 วัน / เดือน / ปีเกิด</td>
+<td>....................................</td>
+</tr>
 
-<p><b>แผนการเรียน :</b> ................................</p>
+<tr>
+<td>🩸 กรุ๊ปเลือด</td>
+<td>....................................</td>
+</tr>
+
+<tr>
+<td>📚 แผนการเรียน</td>
+<td>....................................</td>
+</tr>
+
+<tr>
+<td>🏫 โรงเรียน</td>
+<td>....................................</td>
+</tr>
+
+<tr>
+<td>🎯 งานอดิเรก</td>
+<td>....................................</td>
+</tr>
+
+<tr>
+<td>⭐ ความสามารถพิเศษ</td>
+<td>....................................</td>
+</tr>
+
+<tr>
+<td>💡 คติประจำใจ</td>
+<td>....................................</td>
+</tr>
+
+</table>
 
 </div>
 
-</body>
-</html>
+</div>
+
+<footer>
